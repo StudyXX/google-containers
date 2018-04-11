@@ -1,0 +1,7 @@
+services:
+- docker
+script:
+- chmod +x ./mirror && ./mirror
+branches:
+  only:
+  - master

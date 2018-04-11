@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+docker login reg.qiniu.com -u="${USERNAME}" -p="${PASSWORD}"
+for i in $(cat ./image.list); do
+  o="reg.qiniu.com/ab/$(echo ${i} | awk -F '/' '{ print $NF }')"
+
+  docker image pull "${i}"
+  docker image tag "${i}" "${o}"
+  docker image push "${o}"
+done
+docker logout
