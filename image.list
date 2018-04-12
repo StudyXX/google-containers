@@ -7,3 +7,5 @@ k8s.gcr.io/pause-amd64:3.1
 k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.9
 k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.9
 k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.9
+k8s.gcr.io/kube-aggregator:v1.10.0
+k8s.gcr.io/cloud-controller-manager:v1.10.0
