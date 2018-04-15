@@ -1,8 +1,8 @@
 #! /usr/bin/env bash
 
-docker login reg.qiniu.com -u="${USERNAME}" -p="${PASSWORD}"
+docker login -u="${USERNAME}" -p="${PASSWORD}" registry.cn-beijing.aliyuncs.com
 for i in $(cat ./image.list); do
-  o="reg.qiniu.com/k8s/$(echo ${i} | awk -F '/' '{ print $NF }')"
+  o="registry.cn-beijing.aliyuncs.com/faasx/k8s/$(echo ${i} | awk -F '/' '{ print $NF }')"
 
   docker image pull "${i}"
   docker image tag "${i}" "${o}"
