@@ -1,6 +1,8 @@
 # google-containers
 Google Containers Mirror
 
+[![Build Status](https://travis-ci.org/RainingNight/google-containers.svg?branch=master)](https://travis-ci.org/RainingNight/google-containers)
+
 ## Pull
 
 ```bash
@@ -19,6 +21,10 @@ docker pull reg.qiniu.com/k8s/k8s-dns-dnsmasq-nanny-amd64:1.14.9
 
 ## Dashboard
 docker pull reg.qiniu.com/k8s/kubernetes-dashboard-amd64:v1.8.3
+
+## ingress
+docker pull reg.qiniu.com/k8s/defaultbackend:1.3
+docker pull reg.qiniu.com/k8s/defaultbackend-amd64:1.3
 ```
 
 ## Add k8s.gcr.io tag
@@ -34,4 +40,6 @@ docker tag reg.qiniu.com/k8s/k8s-dns-sidecar-amd64:1.14.9 k8s.gcr.io/k8s-dns-sid
 docker tag reg.qiniu.com/k8s/k8s-dns-kube-dns-amd64:1.14.9 k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.9
 docker tag reg.qiniu.com/k8s/k8s-dns-dnsmasq-nanny-amd64:1.14.9 k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.9
 docker tag reg.qiniu.com/k8s/kubernetes-dashboard-amd64:v1.8.3 k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.3
+docker tag reg.qiniu.com/k8s/defaultbackend:1.3 k8s.gcr.io/defaultbackend:1.3
+docker tag reg.qiniu.com/k8s/defaultbackend-amd64:1.3 k8s.gcr.io/defaultbackend-amd64:1.3
 ```
