@@ -1,6 +1,8 @@
 # google-containers
 Google Containers Mirror
 
+[![Build Status](https://travis-ci.org/RainingNight/google-containers.svg?branch=master)](https://travis-ci.org/RainingNight/google-containers)
+
 ## Pull
 
 ```bash
