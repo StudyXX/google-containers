@@ -10,7 +10,7 @@ Google Containers Mirror
 由于k8s包涵的内容繁多，希望有更多的开发者来一起研究与完善k8s安装及使用教程。
 
 ### 1. [使用k安装ubeadm安装k8s](docs/kubeadm-k8s.md)
-### 2. [部署k8s节点]()
+### 2. [部署k8s节点](docs/join-k8s.md)
 ### 3. [安装ingress-traefik]()
 ### 4. [安装ingress-nginx]()
 ### 5. [Dashboard UI]()
