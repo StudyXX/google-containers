@@ -11,10 +11,10 @@ Google Containers Mirror
 
 ### 1. [使用k安装ubeadm安装k8s](docs/kubeadm-k8s.md)
 ### 2. [部署k8s节点](docs/join-k8s.md)
-### 3. [安装ingress-traefik]()
-### 4. [安装ingress-nginx]()
-### 5. [Dashboard UI]()
-### 6. [安装heapster]()
+### 3. [安装ingress-traefik](docs/ingress-traefik.md)
+### 4. [安装ingress-nginx](docs/ingress-nginx.md)
+### 5. [Dashboard UI](docs/dashboard-ui.md#dashboard)
+### 6. [安装heapster](docs/dashboard-ui.md#heapster)
 ## Doc
 
 * [使用kubeadm初始化Kubernetes（1.10.2）集群教程（国内环境）](http://www.cnblogs.com/RainingNight/p/using-kubeadm-to-create-a-cluster.html)
