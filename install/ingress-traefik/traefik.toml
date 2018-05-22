@@ -1,0 +1,17 @@
+logLevel = "DEBUG"
+defaultEntryPoints = ["http","https"]
+
+[kubernetes]
+namespaces = ["default","kube-system"]
+
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+    [entryPoints.http.redirect]
+    entryPoint = "https"
+  [entryPoints.https]
+  address = ":443"
+    [entryPoints.https.tls]
+      [[entryPoints.https.tls.certificates]]
+      CertFile = "/ssl/traefik-ui.pem"
+      KeyFile = "/ssl/traefik-ui-key.pem"
