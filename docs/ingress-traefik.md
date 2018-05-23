@@ -27,7 +27,7 @@
 //生成treafik-cert
 kubectl create secret generic traefik-cert --from-file=traefik-ui-key.pem --from-file=traefik-ui.pem -n kube-system
 //生成traefik-ui-cert
-kubectcreate secret tls traefik-ui-cert --cert=/root/certs/traefik-ui/traefik-ui.pem --key=/root/certs/traefik-ui/traefik-ui-key.pem -n kube-system
+kubectl create secret tls traefik-ui-cert --cert=/root/certs/traefik-ui/traefik-ui.pem --key=/root/certs/traefik-ui/traefik-ui-key.pem -n kube-system
 ```
 
 **然后，创建一个ConfigMap**
